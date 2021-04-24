@@ -6,13 +6,13 @@ import {
 import TrendingUpIcon from 'mdi-react/TrendingUpIcon';
 import PropTypes from 'prop-types';
 
-const data = [{ name: 'Mon', btc: 70.23 },
-  { name: 'Tue', btc: 80.5 },
-  { name: 'Wed', btc: 38.45 },
-  { name: 'Thu', btc: 89.2 },
-  { name: 'Fri', btc: 105.61 },
-  { name: 'Sat', btc: 98.6 },
-  { name: 'Sun', btc: 115 }];
+const data = [{ name: 'Mon', btc: 41.33 },
+  { name: 'Tue', btc: 38.5 },
+  { name: 'Wed', btc: 14.45 },
+  { name: 'Thu', btc: 29.2 },
+  { name: 'Fri', btc: 24.61 },
+  { name: 'Sat', btc: 28.6 },
+  { name: 'Sun', btc: 43.5 }];
 
 const CustomTooltip = ({ active, payload }) => {
   if (active) {
@@ -60,8 +60,8 @@ export default class BTC extends PureComponent {
         <Card>
           <CardBody className="dashboard__card-widget">
             <div className="card__title">
-              <h5 className="bold-text">BTC</h5>
-              <h5 className="subhead">Bitcoin</h5>
+              <h5 className="bold-text">USD to Birr</h5>
+              <h5 className="subhead">Dollar to birr</h5>
             </div>
             <div className="dashboard__total dashboard__total--area">
               <TrendingUpIcon className="dashboard__trend-icon" />

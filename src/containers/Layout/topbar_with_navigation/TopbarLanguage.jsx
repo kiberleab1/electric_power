@@ -11,7 +11,7 @@ const de = `${process.env.PUBLIC_URL}/img/language/de.png`;
 const GbLng = () => (
   <span className="topbar__language-btn-title">
     <img src={gb} alt="gb" />
-    <span>EN</span>
+    <span>AM</span>
   </span>
 );
 
@@ -82,7 +82,7 @@ class TopbarLanguage extends PureComponent {
           <button
             className="topbar__language-btn"
             type="button"
-            onClick={() => this.changeLanguage('en')}
+            onClick={() => this.changeLanguage('Am')}
           >
             <GbLng />
           </button>

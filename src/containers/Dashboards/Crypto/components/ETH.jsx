@@ -6,7 +6,7 @@ import {
 import TrendingDownIcon from 'mdi-react/TrendingDownIcon';
 import PropTypes from 'prop-types';
 
-const data = [{ name: 'Mon', eth: 70.23 },
+const data = [{ name: 'Mon', eth: 48.23 },
   { name: 'Tue', eth: 80.5 },
   { name: 'Wed', eth: 38.45 },
   { name: 'Thu', eth: 89.2 },
@@ -60,8 +60,8 @@ export default class ETH extends PureComponent {
         <Card>
           <CardBody className="dashboard__card-widget">
             <div className="card__title">
-              <h5 className="bold-text">ETH</h5>
-              <h5 className="subhead">Ethereum</h5>
+              <h5 className="bold-text">Euro To Birr</h5>
+              <h5 className="subhead">Euro to Birr</h5>
             </div>
             <div className="dashboard__total dashboard__total--area">
               <TrendingDownIcon className="dashboard__trend-icon" />

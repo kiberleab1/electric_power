@@ -17,6 +17,7 @@ import Code from './components/Code';
 import Applications from './components/Applications';
 import { changeThemeToDark, changeThemeToLight } from '../../redux/actions/themeActions';
 import { ThemeProps } from '../../shared/prop-types/ReducerProps';
+import  { Redirect } from 'react-router-dom';
 
 const logo = `${process.env.PUBLIC_URL}/img/landing/logo.svg`;
 
@@ -40,6 +41,7 @@ class Landing extends PureComponent {
     const { theme } = this.props;
 
     return (
+      /*
       <div className="landing">
         <div className="landing__menu">
           <Container>
@@ -123,7 +125,8 @@ class Landing extends PureComponent {
         <Testimonials />
         <Purchase />
         <Footer />
-      </div>
+      </div>*/
+      <Redirect to='/dashboard_default' />
     );
   }
 }

@@ -28,8 +28,8 @@ let notification = null;
 const showNotification = (rtl) => {
   notification.notice({
     content: <BasicNotification
-      title="👋 Welcome to the EasyDev!"
-      message="You have successfully registered in the EasyDev. Now you can start to explore the dashboard
+      title="👋 Welcome to the Ethiopian Currency/Stock Information System"
+      message="You have successfully registered in the Ethiopian Currency/Stock Information System. Now you can start to explore the dashboard
                 interface with a bunch of components and applications. Enjoy!"
     />,
     duration: 5,

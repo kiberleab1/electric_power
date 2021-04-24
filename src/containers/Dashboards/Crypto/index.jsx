@@ -42,7 +42,7 @@ class CryptoDashboard extends PureComponent {
       <Container className="dashboard">
         <Row>
           <Col md={12}>
-            <h3 className="page-title">{t('dashboard_crypto.page_title')}</h3>
+            <h3 className="page-title">{t('Currency Exchange')}</h3>
           </Col>
         </Row>
         <Row>

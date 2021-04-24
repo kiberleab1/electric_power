@@ -10,10 +10,10 @@ import Panel from '../../../../shared/components/Panel';
 
 import getTooltipStyles from '../../../../shared/helpers';
 
-const data01 = [{ name: 'Bitcoin', value: 20432, fill: '#4ce1b6' },
-  { name: 'Ethereum', value: 15432, fill: '#70bbfd' },
-  { name: 'Bitcoin Cash', value: 12934, fill: '#f6da6e' },
-  { name: 'Ripple', value: 9934, fill: '#ff4861' }];
+const data01 = [{ name: 'US DOLLAR', value: 20432, fill: '#4ce1b6' },
+  { name: 'GBP', value: 15432, fill: '#70bbfd' },
+  { name: 'SAUDi RIYAL', value: 12934, fill: '#f6da6e' },
+  { name: 'UAE DIRHAm', value: 9934, fill: '#ff4861' }];
 
 const style = (dir) => {
   const left = dir === 'ltr' ? { left: 0 } : { right: 0 };
@@ -74,8 +74,8 @@ class CryptotrendsToday extends PureComponent {
         lg={12}
         xl={6}
         xs={12}
-        title={t('dashboard_crypto.cryptotrends_today')}
-        subhead="Top selling items statistic by last month"
+        title={t('Today Currency Exchange Share')}
+        subhead="'Today Currency Exchange Share Out of 100%"
       >
         <div dir={dir}>
           <ResponsiveContainer className="dashboard__chart-pie dashboard__chart-pie--crypto" height={360}>

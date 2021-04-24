@@ -6,7 +6,7 @@ import {
 import TrendingUpIcon from 'mdi-react/TrendingUpIcon';
 import PropTypes from 'prop-types';
 
-const data = [{ name: 'Mon', xrp: 70.23 },
+const data = [{ name: 'Mon', xrp: 10.23 },
   { name: 'Tue', xrp: 80.5 },
   { name: 'Wed', xrp: 38.45 },
   { name: 'Thu', xrp: 89.2 },
@@ -60,8 +60,8 @@ export default class XRP extends PureComponent {
         <Card>
           <CardBody className="dashboard__card-widget">
             <div className="card__title">
-              <h5 className="bold-text">Xrp</h5>
-              <h5 className="subhead">Ripple</h5>
+              <h5 className="bold-text">DIRHAM to Birr</h5>
+              <h5 className="subhead">UAE DIRHAM to Birr</h5>
             </div>
             <div className="dashboard__total dashboard__total--area">
               <TrendingUpIcon className="dashboard__trend-icon" />

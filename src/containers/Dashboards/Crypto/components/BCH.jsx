@@ -6,7 +6,7 @@ import {
 import TrendingUpIcon from 'mdi-react/TrendingUpIcon';
 import PropTypes from 'prop-types';
 
-const data = [{ name: 'Mon', bch: 70.23 },
+const data = [{ name: 'Mon', bch: 54.23 },
   { name: 'Tue', bch: 80.5 },
   { name: 'Wed', bch: 38.45 },
   { name: 'Thu', bch: 89.2 },
@@ -60,8 +60,8 @@ export default class BCH extends PureComponent {
         <Card>
           <CardBody className="dashboard__card-widget">
             <div className="card__title">
-              <h5 className="bold-text">Bch</h5>
-              <h5 className="subhead">Bitcoin Cash</h5>
+              <h5 className="bold-text">GBP to Birr</h5>
+              <h5 className="subhead">Pound to Birr</h5>
             </div>
             <div className="dashboard__total dashboard__total--area">
               <TrendingUpIcon className="dashboard__trend-icon" />

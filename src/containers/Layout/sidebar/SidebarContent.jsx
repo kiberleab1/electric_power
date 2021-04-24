@@ -21,7 +21,7 @@ class SidebarContent extends Component {
     return (
       <div className="sidebar__content">
         <ul className="sidebar__block">
-          <SidebarLink title="Dashboard Default" icon="home" route="/dashboard_default" onClick={this.hideSidebar} />
+          <SidebarLink title="Stock/Currency" icon="home" route="/dashboard_default" onClick={this.hideSidebar} />
           <SidebarLink
             title="Dashboard E-commerce"
             icon="store"
@@ -35,7 +35,7 @@ class SidebarContent extends Component {
             onClick={this.hideSidebar}
           />
           <SidebarLink
-            title="Dashboard Crypto"
+            title="Currency Exchange"
             icon="rocket"
             route="/dashboard_crypto"
             onClick={this.hideSidebar}
