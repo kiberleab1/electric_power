@@ -13,7 +13,7 @@ const Distance = ({ t }) => (
     <Card>
       <CardBody className="dashboard__health-chart-card">
         <div className="card__title">
-          <h5 className="bold-text card__title-center">{t('dashboard_fitness.distance')}</h5>
+          <h5 className="bold-text card__title-center">{t('Sesame Seed Current Listing')}</h5>
         </div>
         <div className="dashboard__health-chart">
           <ResponsiveContainer height={180}>
@@ -22,12 +22,11 @@ const Distance = ({ t }) => (
             </PieChart>
           </ResponsiveContainer>
           <div className="dashboard__health-chart-info">
-            <MapMarkerRadiusIcon style={{ fill: '#70bbfd' }} />
-            <p className="dashboard__health-chart-number">3.8</p>
-            <p className="dashboard__health-chart-units">km</p>
+            <p className="dashboard__health-chart-number">18K</p>
+            <p className="dashboard__health-chart-units">Birr/tone</p>
           </div>
         </div>
-        <p className="dashboard__goal">Goal: 4 km</p>
+        <p className="dashboard__goal">Price Range: 14000 - 22000</p>
       </CardBody>
     </Card>
   </Col>

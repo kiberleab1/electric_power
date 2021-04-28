@@ -13,7 +13,7 @@ const Steps = ({ t }) => (
     <Card>
       <CardBody className="dashboard__health-chart-card">
         <div className="card__title">
-          <h5 className="bold-text card__title-center">{t('dashboard_fitness.steps')}</h5>
+          <h5 className="bold-text card__title-center">{t('Sunflower Current Listing')}</h5>
         </div>
         <div className="dashboard__health-chart">
           <ResponsiveContainer height={180}>
@@ -22,12 +22,11 @@ const Steps = ({ t }) => (
             </PieChart>
           </ResponsiveContainer>
           <div className="dashboard__health-chart-info">
-            <WalkIcon style={{ fill: '#4ce1b6' }} />
-            <p className="dashboard__health-chart-number">1.2k</p>
-            <p className="dashboard__health-chart-units">steps</p>
+            <p className="dashboard__health-chart-number">12K</p>
+            <p className="dashboard__health-chart-units">birr/Tone</p>
           </div>
         </div>
-        <p className="dashboard__goal">Goal: 2000 steps</p>
+        <p className="dashboard__goal">Price Range: 90000-13000</p>
       </CardBody>
     </Card>
   </Col>

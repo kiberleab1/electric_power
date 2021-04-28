@@ -10,10 +10,10 @@ import Panel from '../../../../shared/components/Panel';
 
 import getTooltipStyles from '../../../../shared/helpers';
 
-const data01 = [{ name: 'Cycling', value: 10, fill: '#4ce1b6' },
-  { name: 'Walking', value: 37, fill: '#70bbfd' },
-  { name: 'Run', value: 21, fill: '#f6da6e' },
-  { name: 'Swimming', value: 32, fill: '#ff4861' }];
+const data01 = [{ name: 'Onion', value: 10, fill: '#4ce1b6' },
+  { name: 'Teff', value: 37, fill: '#70bbfd' },
+  { name: 'SunFlower', value: 21, fill: '#f6da6e' },
+  { name: 'Sesame Seed', value: 32, fill: '#ff4861' }];
 
 const style = (dir) => {
   const left = dir === 'ltr' ? { left: 0 } : { right: 0 };
@@ -70,7 +70,7 @@ class ActivityRating extends PureComponent {
     const { x, y } = this.state;
 
     return (
-      <Panel lg={12} xl={6} md={12} title={t('dashboard_fitness.activity_rating')}>
+      <Panel lg={12} xl={6} md={12} title={t('Total Share in Market')}>
         <div dir="ltr">
           <ResponsiveContainer className="dashboard__chart-pie dashboard__chart-pie--fitness" width="100%" height={360}>
             <PieChart className="dashboard__chart-pie-container">

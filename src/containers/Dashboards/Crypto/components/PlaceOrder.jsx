@@ -10,7 +10,7 @@ const PlaceOrder = ({ t }) => (
     xl={6}
     lg={12}
     title={t('dashboard_crypto.trade_history')}
-    subhead="You can buy or sell a cryptocurrency"
+    subhead="Calculate Exchange currency"
   >
     <div className="dashboard__place-order">
       <BuyBTC onSubmit />

@@ -16,9 +16,9 @@ import Panel from '../../../../shared/components/Panel';
 const data = [
   {
     name: 'Mon',
-    btc: 70.23,
-    eth: 54.23,
-    xrp: 85.23,
+    Onion: 70.23,
+    Teff: 54.23,
+    Sorghum: 85.23,
     bch: 47.23,
     eos: 25.23,
     ltc: 69.23,
@@ -29,7 +29,7 @@ const data = [
   },
   {
     name: 'Tue',
-    btc: 25.5,
+    Onion: 25.5,
     eth: 72.5,
     xrp: 25.5,
     bch: 29.5,
@@ -42,7 +42,7 @@ const data = [
   },
   {
     name: 'Wed',
-    btc: 78.45,
+    Onion: 78.45,
     eth: 78.45,
     xrp: 58.45,
     bch: 32.45,
@@ -55,7 +55,7 @@ const data = [
   },
   {
     name: 'Thu',
-    btc: 45.2,
+    Onion: 45.2,
     eth: 35.2,
     xrp: 45.2,
     bch: 78.2,
@@ -68,7 +68,7 @@ const data = [
   },
   {
     name: 'Fri',
-    btc: 56.61,
+    Onion: 56.61,
     eth: 78.61,
     xrp: 35.61,
     bch: 105.61,
@@ -81,7 +81,7 @@ const data = [
   },
   {
     name: 'Sat',
-    btc: 110.6,
+    Onion: 110.6,
     eth: 45.6,
     xrp: 57.6,
     bch: 78.6,
@@ -94,7 +94,7 @@ const data = [
   },
   {
     name: 'Sun',
-    btc: 115,
+    Onion: 115,
     eth: 115,
     xrp: 115,
     bch: 115,
@@ -149,7 +149,7 @@ DropDownMore.propTypes = {
 };
 
 const TopTen = ({ cryptoTable, onDeleteCryptoTableData, t }) => (
-  <Panel lg={12} title={t('dashboard_crypto.top_cryptocurrencies')}>
+  <Panel lg={12} title={t('Detailed Business Information')}>
     <Table responsive className="table--bordered dashboard__table-crypto">
       <thead>
         <tr>
@@ -168,7 +168,7 @@ const TopTen = ({ cryptoTable, onDeleteCryptoTableData, t }) => (
         {cryptoTable.map((crypto, index) => (
           <tr key={index}>
             <td>{index + 1}</td>
-            <td>{crypto.name}</td>
+            <td>{crypto.price}</td>
             <td dir="ltr">{crypto.market_cap}</td>
             <td dir="ltr">{crypto.price}</td>
             <td dir="ltr">{crypto.volume}</td>

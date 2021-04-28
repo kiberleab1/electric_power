@@ -15,19 +15,6 @@ const GbLng = () => (
   </span>
 );
 
-const FrLng = () => (
-  <span className="topbar__language-btn-title">
-    <img src={fr} alt="fr" />
-    <span>FR</span>
-  </span>
-);
-
-const DeLng = () => (
-  <span className="topbar__language-btn-title">
-    <img src={de} alt="de" />
-    <span>DE</span>
-  </span>
-);
 
 class TopbarLanguage extends PureComponent {
   static propTypes = {
@@ -53,13 +40,7 @@ class TopbarLanguage extends PureComponent {
       case 'en':
         this.setState({ mainButtonContent: <GbLng /> });
         break;
-      case 'fr':
-        this.setState({ mainButtonContent: <FrLng /> });
-        break;
-      case 'de':
-        this.setState({ mainButtonContent: <DeLng /> });
-        break;
-      default:
+        default:
         this.setState({ mainButtonContent: <GbLng /> });
         break;
     }
@@ -85,20 +66,6 @@ class TopbarLanguage extends PureComponent {
             onClick={() => this.changeLanguage('en')}
           >
             <GbLng />
-          </button>
-          <button
-            className="topbar__language-btn"
-            type="button"
-            onClick={() => this.changeLanguage('fr')}
-          >
-            <FrLng />
-          </button>
-          <button
-            className="topbar__language-btn"
-            type="button"
-            onClick={() => this.changeLanguage('de')}
-          >
-            <DeLng />
           </button>
         </Collapse>
       </div>

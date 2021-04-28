@@ -59,7 +59,6 @@ class CryptoDashboard extends PureComponent {
           />
           <CryptotrendsToday dir={rtl.direction} />
           <PlaceOrder />
-          <TopTen cryptoTable={cryptoTable} onDeleteCryptoTableData={this.onDeleteCryptoTableData} />
         </Row>
       </Container>
     );

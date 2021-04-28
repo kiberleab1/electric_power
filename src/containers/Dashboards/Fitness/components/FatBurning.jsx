@@ -21,7 +21,7 @@ const data = [
 ];
 
 const FatBurning = ({ t, dir, themeName }) => (
-  <Panel lg={7} xl={6} md={12} xs={12} title={t('dashboard_fitness.fat_burning')}>
+  <Panel lg={7} xl={6} md={12} xs={12} title={t('TEFF')}>
     <div className="dashboard__weight-stats">
       <div className="dashboard__weight-stat">
         <p className="dashboard__weight-stat-title">Weight control</p>

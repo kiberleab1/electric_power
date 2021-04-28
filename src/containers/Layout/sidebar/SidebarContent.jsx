@@ -29,7 +29,7 @@ class SidebarContent extends Component {
             onClick={this.hideSidebar}
           />
           <SidebarLink
-            title="Dashboard Fitness"
+            title="Food and OilSeeds"
             icon="heart-pulse"
             route="/dashboard_fitness"
             onClick={this.hideSidebar}
@@ -40,7 +40,9 @@ class SidebarContent extends Component {
             route="/dashboard_crypto"
             onClick={this.hideSidebar}
           />
-          <SidebarLink
+          </ul>
+          {/*
+           <SidebarLink
             title="Dashboard Booking"
             icon="apartment"
             newLink
@@ -53,7 +55,7 @@ class SidebarContent extends Component {
             newLink
             route="/dashboard_mobile_app"
             onClick={this.hideSidebar}
-          />
+          />*/}
           <SidebarCategory title="Layout" icon="layers">
             <button className="sidebar__link" type="button" onClick={changeToLight}>
               <p className="sidebar__link-title">Light Theme</p>
@@ -62,14 +64,13 @@ class SidebarContent extends Component {
               <p className="sidebar__link-title">Dark Theme</p>
             </button>
           </SidebarCategory>
-          <SidebarLink
+          {/*<SidebarLink
             title="Log In"
             route="/log_in"
             icon="user"
             newLink
             onClick={this.hideSidebar}
           />
-        </ul>
         <ul className="sidebar__block">
           <SidebarCategory title="UI Elements" icon="diamond">
             <SidebarLink title="Alerts" route="/ui/alerts" onClick={this.hideSidebar} />
@@ -118,7 +119,7 @@ class SidebarContent extends Component {
             <SidebarLink title="Google map" route="/maps/google_map" onClick={this.hideSidebar} />
             <SidebarLink title="Vector map" route="/maps/vector_map" onClick={this.hideSidebar} />
           </SidebarCategory>
-        </ul>
+        </ul>*/}
         <ul className="sidebar__block">
           <SidebarCategory title="Account" icon="user">
             <SidebarLink title="Email Confirmation" route="/account/email_confirmation" />
@@ -128,7 +129,7 @@ class SidebarContent extends Component {
             <SidebarLink title="Register" route="/register" />
             <SidebarLink title="Register Photo" route="/register_photo" />
           </SidebarCategory>
-          <SidebarCategory title="E-commerce" icon="cart">
+          {/*<SidebarCategory title="E-commerce" icon="cart">
             <SidebarLink title="Cart" route="/e-commerce/cart" onClick={this.hideSidebar} />
             <SidebarLink title="Catalog" route="/e-commerce/catalog" onClick={this.hideSidebar} />
             <SidebarLink title="Orders List" route="/e-commerce/orders_list" onClick={this.hideSidebar} />
@@ -136,7 +137,7 @@ class SidebarContent extends Component {
             <SidebarLink title="Product Edit" route="/e-commerce/product_edit" onClick={this.hideSidebar} />
             <SidebarLink title="Product Page" route="/e-commerce/product_page" onClick={this.hideSidebar} />
             <SidebarLink title="Products List" route="/e-commerce/products_list" onClick={this.hideSidebar} />
-          </SidebarCategory>
+          </SidebarCategory>*/}
           <SidebarCategory title="Default Pages" icon="file-empty">
             <SidebarLink title="404" route="/404" />
             <SidebarLink title="Calendar" route="/default_pages/calendar" onClick={this.hideSidebar} />
@@ -148,25 +149,18 @@ class SidebarContent extends Component {
             <SidebarLink title="Search Results" route="/default_pages/search_results" onClick={this.hideSidebar} />
             <SidebarLink title="Text Editor" route="/default_pages/text_editor" onClick={this.hideSidebar} />
           </SidebarCategory>
-          <SidebarCategory title="Multilevel Menu " icon="menu">
+          {/*<SidebarCategory title="Multilevel Menu " icon="menu">
             <SidebarLink title="Second Level Item" />
             <SidebarCategory title="Second Level Item">
               <SidebarLink title="Third Level Item" />
               <SidebarLink title="Third Level Item" />
             </SidebarCategory>
-          </SidebarCategory>
+          </SidebarCategory>*/}
         </ul>
         <ul className="sidebar__block">
           <SidebarLink title="Log Out" icon="exit" route="/log_in" />
         </ul>
-        <ul className="sidebar__block">
-          <SidebarLink
-            title="Documentation"
-            icon="text-align-justify"
-            route="/documentation/introduction"
-            onClick={this.hideSidebar}
-          />
-        </ul>
+      
       </div>
     );
   }

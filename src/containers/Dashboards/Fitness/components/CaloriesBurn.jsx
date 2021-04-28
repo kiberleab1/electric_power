@@ -13,7 +13,7 @@ const CaloriesBurn = ({ t }) => (
     <Card>
       <CardBody className="dashboard__health-chart-card">
         <div className="card__title">
-          <h5 className="bold-text card__title-center">{t('dashboard_fitness.calories_burn')}</h5>
+          <h5 className="bold-text card__title-center">{t('TEFF Current Selling')}</h5>
         </div>
         <div className="dashboard__health-chart">
           <ResponsiveContainer height={180}>
@@ -21,13 +21,12 @@ const CaloriesBurn = ({ t }) => (
               <Pie data={data} dataKey="value" cy={85} innerRadius={80} outerRadius={90} />
             </PieChart>
           </ResponsiveContainer>
-          <div className="dashboard__health-chart-info">
-            <FlashIcon style={{ fill: '#f6da6e' }} />
-            <p className="dashboard__health-chart-number">360</p>
-            <p className="dashboard__health-chart-units">kKal</p>
+          <div className="dashboard__health-chart-info">      
+            <p className="dashboard__health-chart-number">3600</p>
+            <p className="dashboard__health-chart-units">birr/tone</p>
           </div>
         </div>
-        <p className="dashboard__goal">Goal: 500 kKal</p>
+        <p className="dashboard__goal">Price Range: 2800-5000</p>
       </CardBody>
     </Card>
   </Col>

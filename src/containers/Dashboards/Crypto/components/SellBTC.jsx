@@ -5,44 +5,33 @@ import PropTypes from 'prop-types';
 
 const SellBTC = ({ handleSubmit }) => (
   <div className="dashboard__place-order-form">
-    <h5 className="bold-text">Sell BTC</h5>
-    <h5 className="dashboard__place-order-form-subhead subhead">BTC Balance: 2.232344</h5>
+    <h5 className="bold-text">Exchange GBP</h5>
+    <h5 className="dashboard__place-order-form-subhead subhead"></h5>
     <form className="form form--horizontal" onSubmit={handleSubmit}>
       <div className="form__form-group">
-        <span className="form__form-group-label">Price</span>
-        <div className="form__form-group-field">
-          <Field
-            name="price"
-            component="input"
-            type="text"
-            placeholder="$ 1322323,3"
-          />
-        </div>
-      </div>
-      <div className="form__form-group">
-        <span className="form__form-group-label">Amount</span>
+        <span className="form__form-group-label">BIRR</span>
         <div className="form__form-group-field">
           <Field
             name="amount"
             component="input"
             type="text"
-            placeholder="0,000334 BTC"
+            placeholder="0,000334 BIRR"
           />
         </div>
       </div>
       <div className="form__form-group">
-        <span className="form__form-group-label">Total</span>
+        <span className="form__form-group-label">GBP</span>
         <div className="form__form-group-field">
           <Field
             name="total"
             component="input"
             type="text"
-            placeholder="$ 112,454"
+            placeholder="GBP 112,454"
           />
         </div>
       </div>
       <ButtonToolbar className="form__button-toolbar">
-        <Button color="success" type="submit">Sell BTC</Button>
+        <Button color="success" type="submit">Calculate</Button>
       </ButtonToolbar>
     </form>
   </div>
