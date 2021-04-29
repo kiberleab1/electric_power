@@ -30,7 +30,7 @@ const brush = (theme) => {
 };
 
 const BtcEth = ({ theme, dir }) => (
-  <Panel xl={8} lg={7} md={12} xs={12} title="BTC & ETH" subhead="Ratings by Market Capitalization">
+  <Panel xl={8} lg={7} md={12} xs={12} title="US Dollar & ETH Birr" subhead="Ratings by Market Capitalization">
     <div dir="ltr">
       <ResponsiveContainer height={280} className="dashboard__area">
         <AreaChart data={data} margin={{ top: 20, left: -15, bottom: 20 }}>
@@ -41,14 +41,14 @@ const BtcEth = ({ theme, dir }) => (
           <CartesianGrid />
           <Brush dataKey="name" height={12} stroke={brush(theme)} fill={brush(theme)} />
           <Area
-            name="BTC"
+            name="US Dollar"
             type="monotone"
             dataKey="eth"
             fill="#4ce1b6"
             stroke="#4ce1b6"
             fillOpacity={0.2}
           />
-          <Area name="ETH" type="monotone" dataKey="btc" fill="#70bbfd" stroke="#70bbfd" fillOpacity={0.2} />
+          <Area name="ETH Birr" type="monotone" dataKey="btc" fill="#70bbfd" stroke="#70bbfd" fillOpacity={0.2} />
         </AreaChart>
       </ResponsiveContainer>
     </div>
