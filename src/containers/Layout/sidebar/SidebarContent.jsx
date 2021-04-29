@@ -21,7 +21,7 @@ class SidebarContent extends Component {
     return (
       <div className="sidebar__content">
         <ul className="sidebar__block">
-          <SidebarLink title="Gold and Commodities" 
+        <SidebarLink title="Gold and Commodities" 
             icon="home" 
             route="/dashboard_default" 
             onClick={this.hideSidebar}
@@ -45,21 +45,6 @@ class SidebarContent extends Component {
             onClick={this.hideSidebar}
           />
           <SidebarLink
-            title="Oil and Gas"
-            icon="rocket"
-            route="/dashboard_oil_gas"
-            onClick={this.hideSidebar}
-          />
-          </ul>
-          {/*
-           <SidebarLink
-            title="Dashboard Booking"
-            icon="apartment"
-            newLink
-            route="/dashboard_booking"
-            onClick={this.hideSidebar}
-          />
-          <SidebarLink
             title="Construction Materials"
             icon="diamond"
             route="/dashboard_mobile_app"
@@ -71,6 +56,13 @@ class SidebarContent extends Component {
            route="/dashboard_booking"
            onClick={this.hideSidebar}
          />
+         
+         <SidebarLink
+            title="Oil and Gas"
+            icon="rocket"
+            route="/dashboard_oil_gas"
+            onClick={this.hideSidebar}
+          />
           </ul>
 
 
@@ -139,7 +131,7 @@ class SidebarContent extends Component {
           </SidebarCategory>
         </ul>*/}
         <ul className="sidebar__block">
-          <SidebarCategory title="Account" icon="user">
+          {/*<SidebarCategory title="Account" icon="user">
             <SidebarLink title="Email Confirmation" route="/account/email_confirmation" />
             <SidebarLink title="Lock Screen" route="/lock_screen" />
             <SidebarLink title="Log In Photo" route="/log_in_photo" />
@@ -147,7 +139,7 @@ class SidebarContent extends Component {
             <SidebarLink title="Register" route="/register" />
             <SidebarLink title="Register Photo" route="/register_photo" />
           </SidebarCategory>
-          {/*<SidebarCategory title="E-commerce" icon="cart">
+          <SidebarCategory title="E-commerce" icon="cart">
             <SidebarLink title="Cart" route="/e-commerce/cart" onClick={this.hideSidebar} />
             <SidebarLink title="Catalog" route="/e-commerce/catalog" onClick={this.hideSidebar} />
             <SidebarLink title="Orders List" route="/e-commerce/orders_list" onClick={this.hideSidebar} />
@@ -155,7 +147,7 @@ class SidebarContent extends Component {
             <SidebarLink title="Product Edit" route="/e-commerce/product_edit" onClick={this.hideSidebar} />
             <SidebarLink title="Product Page" route="/e-commerce/product_page" onClick={this.hideSidebar} />
             <SidebarLink title="Products List" route="/e-commerce/products_list" onClick={this.hideSidebar} />
-          </SidebarCategory>*/}
+          </SidebarCategory>*
           <SidebarCategory title="Default Pages" icon="file-empty">
             <SidebarLink title="404" route="/404" />
             <SidebarLink title="Calendar" route="/default_pages/calendar" onClick={this.hideSidebar} />
@@ -167,7 +159,7 @@ class SidebarContent extends Component {
             <SidebarLink title="Search Results" route="/default_pages/search_results" onClick={this.hideSidebar} />
             <SidebarLink title="Text Editor" route="/default_pages/text_editor" onClick={this.hideSidebar} />
           </SidebarCategory>
-          {/*<SidebarCategory title="Multilevel Menu " icon="menu">
+          <SidebarCategory title="Multilevel Menu " icon="menu">
             <SidebarLink title="Second Level Item" />
             <SidebarCategory title="Second Level Item">
               <SidebarLink title="Third Level Item" />
@@ -175,10 +167,7 @@ class SidebarContent extends Component {
             </SidebarCategory>
           </SidebarCategory>*/}
         </ul>
-        <ul className="sidebar__block">
-          <SidebarLink title="Log Out" icon="exit" route="/log_in" />
-        </ul>
-
+       
       </div>
     );
   }
