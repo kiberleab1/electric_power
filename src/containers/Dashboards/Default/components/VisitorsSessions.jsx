@@ -10,10 +10,10 @@ import Panel from '../../../../shared/components/Panel';
 
 import getTooltipStyles from '../../../../shared/helpers';
 
-const data01 = [{ name: 'Chrome', value: 12934, fill: '#4ce1b6' },
-  { name: 'Safari', value: 9934, fill: '#70bbfd' },
-  { name: 'Mozilla', value: 20432, fill: '#f6da6e' },
-  { name: 'IE', value: 15432, fill: '#ff4861' }];
+const data01 = [{ name: '15 karat', value: 12934, fill: '#4ce1b6' },
+  { name: '18 Karat', value: 9934, fill: '#70bbfd' },
+  { name: '21 Karat', value: 20432, fill: '#f6da6e' },
+  { name: '28 Karat', value: 15432, fill: '#ff4861' }];
 
 const style = {
   left: 0,
@@ -67,14 +67,14 @@ class VisitorsSessions extends PureComponent {
 
     return (
       <Panel
-        lg={6}
-        xl={4}
+        lg={12}
+        xl={6}
         md={12}
-        title={t('dashboard_default.visitors_sessions')}
-        subhead="What browsers are most popular"
+        title={t('GOLD KARATE MARKET SHARE')}
+        
       >
         <div className="dashboard__visitors-chart">
-          <p className="dashboard__visitors-chart-title">Total visitors <span>on 23.08.2017</span></p>
+          <p className="dashboard__visitors-chart-title">Total Grams Sold <span>12,384</span></p>
           <p className="dashboard__visitors-chart-number">12,384</p>
           <ResponsiveContainer className="dashboard__chart-pie" width="100%" height={220}>
             <PieChart className="dashboard__chart-pie-container">

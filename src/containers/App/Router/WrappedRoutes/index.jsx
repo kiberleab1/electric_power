@@ -20,7 +20,7 @@ import FitnessDashboard from '../../../Dashboards/Fitness/index';
 import DefaultDashboard from '../../../Dashboards/Default/index';
 import MobileAppDashboard from '../../../Dashboards/MobileApp/index';
 import BookingDashboard from '../../../Dashboards/Booking/index';
-
+import OilGas from './OilGas';
 import Mail from '../../../Mail/index';
 
 export default () => (
@@ -31,6 +31,7 @@ export default () => (
       <Route path="/dashboard_e_commerce" component={Commerce} />
       <Route path="/dashboard_fitness" component={FitnessDashboard} />
       <Route path="/dashboard_crypto" component={Crypto} />
+      <Route path="/dashboard_oil_gas" component={OilGas} />
       <Route exact path="/dashboard_mobile_app" component={MobileAppDashboard} />
       <Route path="/dashboard_booking" component={BookingDashboard} />
       <Route path="/ui" component={UI} />

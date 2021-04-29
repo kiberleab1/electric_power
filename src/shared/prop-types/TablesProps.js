@@ -25,3 +25,33 @@ export const NewOrderRowProps = shape({
 });
 
 export const NewOrderTableProps = arrayOf(NewOrderRowProps);
+
+export const NewCommoditiesRowProps = shape({
+  title: string,
+  quantity: number,
+  sold: number,
+  total: string,
+  img: string,
+});
+
+export const NewCommoditiesTableProps=arrayOf(NewCommoditiesRowProps);
+
+export const NewOilRowProps = shape({
+  title: string,
+  quantity: number,
+  sold: number,
+  total: string,
+  img: string,
+});
+
+export const NewOilTableProps=arrayOf(NewOilRowProps);
+
+export const NewGasRowProps = shape({
+  title: string,
+  quantity: number,
+  sold: number,
+  total: string,
+  img: string,
+});
+
+export const NewGasTableProps=arrayOf(NewOilRowProps);

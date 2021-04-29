@@ -45,7 +45,7 @@ class ECommerceDashboard extends PureComponent {
     return (
       <Container className="dashboard">
         <Row>
-          <Col md={12}>
+          <Col md={16}>
             <h3 className="page-title">{t('dashboard_commerce.page_title')}</h3>
           </Col>
         </Row>

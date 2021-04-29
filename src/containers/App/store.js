@@ -6,9 +6,11 @@ import {
   sidebarReducer,
   themeReducer,
   customizerReducer,
+  newCommoditiesTableReducer,
   todoReducer,
   rtlReducer,
   authReducer,
+  newOilTableReducer,
 } from '../../redux/reducers/index';
 
 const reducer = combineReducers({
@@ -18,6 +20,8 @@ const reducer = combineReducers({
   sidebar: sidebarReducer,
   cryptoTable: cryptoTableReducer,
   newOrder: newOrderTableReducer,
+  newCommodities: newCommoditiesTableReducer,
+  newOil: newOilTableReducer,
   customizer: customizerReducer,
   todos: todoReducer,
   user: authReducer,

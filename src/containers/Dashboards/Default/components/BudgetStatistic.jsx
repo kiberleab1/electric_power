@@ -1,42 +1,98 @@
-import React from 'react';
-import { PieChart, Pie } from 'recharts';
+/* eslint-disable react/no-array-index-key */
+import React, { PureComponent } from 'react';
+import { connect } from 'react-redux';
+import {
+  PieChart, Pie, Tooltip, Legend, ResponsiveContainer,
+} from 'recharts';
 import { withTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import Panel from '../../../../shared/components/Panel';
 
-const data01 = [{ value: 50, fill: '#4ce1b6' },
-  { value: 50, fill: '#eeeeee' }];
+import getTooltipStyles from '../../../../shared/helpers';
 
-const BudgetStatistic = ({ t }) => (
-  <Panel md={12} lg={6} xl={4} title={t('dashboard_default.budget_statistic')}>
-    <div className="dashboard__stat dashboard__stat--budget">
-      <div className="dashboard__stat-main">
-        <p className="dashboard__stat-main-title">Total Budget</p>
-        <p className="dashboard__stat-main-number">$12,321</p>
-        <hr />
-      </div>
-      <div className="dashboard__stat-chart">
-        <PieChart height={120} width={120}>
-          <Pie data={data01} dataKey="value" cx={55} cy={55} innerRadius={50} outerRadius={60} />
-        </PieChart>
-        <p className="dashboard__stat-label">$</p>
-      </div>
-      <div className="dashboard__stat-data">
-        <div>
-          <p className="dashboard__stat-data-number">$4,937</p>
-          <p style={{ color: '#eeeeee' }}>Completed</p>
-        </div>
-        <div>
-          <p className="dashboard__stat-data-number">$7,566</p>
-          <p style={{ color: '#4ce1b6' }}>Remaining</p>
-        </div>
-      </div>
-    </div>
-  </Panel>
-);
+const data01 = [{ name: 'GOLD', value: 12934, fill: '#4ce1b6' },
+  { name: 'PLATINIUM', value: 9934, fill: '#70bbfd' },
+  { name: 'SILVER', value: 20432, fill: '#f6da6e' },];
 
-BudgetStatistic.propTypes = {
-  t: PropTypes.func.isRequired,
+const style = {
+  left: 0,
+  width: 150,
+  lineHeight: '24px',
+  position: 'relative',
 };
 
-export default withTranslation('common')(BudgetStatistic);
+const renderLegend = ({ payload }) => (
+  <ul className="dashboard__chart-legend">
+    {
+      payload.map((entry, index) => (
+        <li key={`item-${index}`}><span style={{ backgroundColor: entry.color }} />{entry.value}</li>
+      ))
+    }
+  </ul>
+);
+
+renderLegend.propTypes = {
+  payload: PropTypes.arrayOf(PropTypes.shape({
+    color: PropTypes.string,
+    vslue: PropTypes.string,
+  })).isRequired,
+};
+
+class CommoditiesStat extends PureComponent {
+  static propTypes = {
+    t: PropTypes.func.isRequired,
+    dir: PropTypes.string.isRequired,
+    themeName: PropTypes.string.isRequired,
+  };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      x: 0,
+      y: 0,
+    };
+  }
+
+  onMouseMove = (e) => {
+    const { dir } = this.props;
+    if (e.tooltipPosition) {
+      this.setState({ x: dir === 'ltr' ? e.tooltipPosition.x : e.tooltipPosition.x / 10, y: e.tooltipPosition.y });
+    }
+  };
+
+  render() {
+    const { x, y, themeName } = this.state;
+    const { t } = this.props;
+
+    return (
+      <Panel
+        lg={12}
+        xl={6}
+        md={12}
+        title={t('COMMODITIES MARKET SHARE')}
+        
+      >
+        <div className="dashboard__visitors-chart">
+          <p className="dashboard__visitors-chart-title">Total Grams Sold <span>17,384</span></p>
+          <p className="dashboard__visitors-chart-number">17,384</p>
+          <ResponsiveContainer className="dashboard__chart-pie" width="100%" height={220}>
+            <PieChart className="dashboard__chart-pie-container">
+              <Tooltip position={{ x, y }} {...getTooltipStyles(themeName)} />
+              <Pie
+                data={data01}
+                dataKey="value"
+                cy={110}
+                innerRadius={70}
+                outerRadius={100}
+                onMouseMove={this.onMouseMove}
+              />
+              <Legend layout="vertical" verticalAlign="bottom" wrapperStyle={style} content={renderLegend} />
+            </PieChart>
+          </ResponsiveContainer>
+        </div>
+      </Panel>
+    );
+  }
+}
+
+export default connect(state => ({ themeName: state.theme.className }))(withTranslation('common')(CommoditiesStat));
