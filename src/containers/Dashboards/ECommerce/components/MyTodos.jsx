@@ -13,7 +13,7 @@ class MyTodos extends PureComponent {
     checkedItems: [
       {
         id: '1',
-        label: 'Call to Margaret and tell about EasyDEV',
+        label: 'Add New Samsung s7 device',
         checked: true,
       },
       {
@@ -38,7 +38,7 @@ class MyTodos extends PureComponent {
       },
       {
         id: '6',
-        label: 'Make a sandwich',
+        label: 'Make a Week report',
         checked: true,
       },
       {
@@ -48,12 +48,12 @@ class MyTodos extends PureComponent {
       },
       {
         id: '8',
-        label: 'Walk with my dog',
+        label: 'meeting with teammate',
         checked: true,
       },
       {
         id: '9',
-        label: 'Buy some milk, bread and a new car',
+        label: 'Progress review',
         checked: true,
       },
     ],
@@ -74,10 +74,10 @@ class MyTodos extends PureComponent {
       <Panel
         md={12}
         lg={5}
-        xl={3}
+        xl={4}
         xs={12}
-        title={t('dashboard_commerce.my_todos')}
-        subhead="Do not forget to do everything"
+        title={t('Task Manager')}
+        subhead="Do not forget to do those"
       >
         {
           checkedItems.map(todo => (

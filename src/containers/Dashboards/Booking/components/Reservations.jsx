@@ -81,14 +81,13 @@ class Reservations extends PureComponent {
         lg={6}
         xl={3}
         md={12}
-        title={t('dashboard_booking.reservations')}
-        subhead="Reservation overview"
-        before={<OurMission />}
+        title={t('Orders')}
+        subhead="order overview"
         panelClass="dashboard__booking-reservations-panel"
       >
         <div className="dashboard__booking-reservations">
-          <p className="dashboard__booking-reservations-title">Total visitors on 23.08.2018</p>
-          <p className="dashboard__booking-reservations-number">345</p>
+          <p className="dashboard__booking-reservations-title">Total Order till now</p>
+          <p className="dashboard__booking-reservations-number">3459</p>
           <div className="dashboard__booking-reservations-chart" dir={dir}>
             <ResponsiveContainer>
               <PieChart className="dashboard__booking-reservations-chart-container">

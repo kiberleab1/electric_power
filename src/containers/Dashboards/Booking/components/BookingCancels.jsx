@@ -9,14 +9,10 @@ const BookingCancels = () => (
     <Card>
       <CardBody className="dashboard__booking-card">
         <div className="dashboard__booking-total-container">
-          <h5 className="dashboard__booking-total-title">34</h5>
+          <h5 className="dashboard__booking-total-title">34%</h5>
           <TrendingUpIcon className="dashboard__trend-icon" />
         </div>
-        <h5 className="dashboard__booking-total-description">Booking cancels</h5>
-        <div className="progress-wrap progress-wrap--small progress-wrap--turquoise-gradient progress-wrap--rounded">
-          <p className="dashboard__booking-card-progress-label progress__label">45%</p>
-          <Progress value={45} />
-        </div>
+        <h5 className="dashboard__booking-total-description">Total Revenu</h5>
       </CardBody>
     </Card>
   </Col>

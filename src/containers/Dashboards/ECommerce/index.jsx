@@ -46,7 +46,7 @@ class ECommerceDashboard extends PureComponent {
       <Container className="dashboard">
         <Row>
           <Col md={12}>
-            <h3 className="page-title">{t('dashboard_commerce.page_title')}</h3>
+            <h3 className="page-title">{t('E commerce')}</h3>
           </Col>
         </Row>
         <Row>
@@ -57,13 +57,11 @@ class ECommerceDashboard extends PureComponent {
         </Row>
         <Row>
           <ProductSales rtl={rtl.direction} />
-          <BasicCard />
           <SalesStatistic />
           <MyTodos />
           <SalesStatistisBar />
           <SalesReport />
           <Emails />
-          <ShortReminders />
           <TopSellingProducts dir={rtl.direction} />
           <NewOrders newOrder={newOrder} onDeleteRow={this.onDeleteRow} />
           <RecentOrders />

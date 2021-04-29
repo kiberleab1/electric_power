@@ -23,7 +23,7 @@ class SidebarContent extends Component {
         <ul className="sidebar__block">
           <SidebarLink title="Stock/Currency" icon="home" route="/dashboard_default" onClick={this.hideSidebar} />
           <SidebarLink
-            title="Dashboard E-commerce"
+            title="E-commerce"
             icon="store"
             route="/dashboard_e_commerce"
             onClick={this.hideSidebar}
@@ -40,22 +40,21 @@ class SidebarContent extends Component {
             route="/dashboard_crypto"
             onClick={this.hideSidebar}
           />
-          </ul>
-          {/*
-           <SidebarLink
-            title="Dashboard Booking"
-            icon="apartment"
-            newLink
-            route="/dashboard_booking"
+          <SidebarLink
+            title="Construction Materials"
+            icon="diamond"
+            route="/dashboard_mobile_app"
             onClick={this.hideSidebar}
           />
           <SidebarLink
-            title="Dashboard MobileApp"
-            icon="smartphone"
-            newLink
-            route="/dashboard_mobile_app"
-            onClick={this.hideSidebar}
-          />*/}
+           title="Electronics"
+           icon="smartphone"
+           route="/dashboard_booking"
+           onClick={this.hideSidebar}
+         />
+          </ul>
+
+
           <SidebarCategory title="Layout" icon="layers">
             <button className="sidebar__link" type="button" onClick={changeToLight}>
               <p className="sidebar__link-title">Light Theme</p>
@@ -160,7 +159,7 @@ class SidebarContent extends Component {
         <ul className="sidebar__block">
           <SidebarLink title="Log Out" icon="exit" route="/log_in" />
         </ul>
-      
+
       </div>
     );
   }

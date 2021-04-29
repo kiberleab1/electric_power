@@ -55,7 +55,7 @@ class TotalProfit extends PureComponent {
             <div className="dashboard__total">
               <TrendingUpIcon className="dashboard__trend-icon" />
               <p className="dashboard__total-stat">
-                ${(activeItem.amt).toFixed(2)}
+                {(activeItem.amt).toFixed(2)} Birr
               </p>
               <div className="dashboard__chart-container">
                 <ResponsiveContainer height={50}>

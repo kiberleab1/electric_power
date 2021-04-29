@@ -78,7 +78,7 @@ class SalesStatistisBar extends PureComponent {
 
     return (
       <Panel
-        xl={3}
+        xl={4}
         lg={7}
         md={12}
         title={t('dashboard_commerce.sales_statistic')}

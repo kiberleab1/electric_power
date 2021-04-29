@@ -13,8 +13,8 @@ const CurrentUsers = ({ t }) => (
     lg={6}
     xl={3}
     md={12}
-    title={t('dashboard_mobile_app.current_users')}
-    subhead="Last 10 minutes"
+    title={t('New construction site')}
+    subhead="Last 10 days"
   >
     <div className="dashboard__current-users">
       <div className="dashboard__current-users-chart">
@@ -35,11 +35,11 @@ const CurrentUsers = ({ t }) => (
       </div>
       <div className="dashboard__current-users-info" dir="ltr">
         <p className="dashboard__current-users-day">
-          <span>7d min</span>
+          <span>10d min</span>
           <span>0</span>
         </p>
         <p className="dashboard__current-users-day">
-          <span>7d max</span>
+          <span>10d max</span>
           <span>500</span>
         </p>
       </div>

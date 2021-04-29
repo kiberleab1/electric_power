@@ -10,7 +10,7 @@ const TotalProfitEarned = () => (
       <CardBody className="dashboard__booking-card">
         <div className="dashboard__booking-total-container">
           <h5 className="dashboard__booking-total-title dashboard__booking-total-title--red">
-            $ 465 832
+           465,832 Birr
           </h5>
           <TrendingDownIcon className="dashboard__trend-icon" />
         </div>

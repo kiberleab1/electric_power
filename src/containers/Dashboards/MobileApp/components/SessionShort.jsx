@@ -17,7 +17,7 @@ const SessionShort = ({ t }) => (
             <TrendingDownIcon className="dashboard__trend-icon" />
           </div>
           <div className="mobile-app-widget__title">
-            <h5>{t('dashboard_mobile_app.widget_sessions')}</h5>
+            <h5>{t('Total Sale')}</h5>
           </div>
           <div className="progress-wrap progress-wrap--small progress-wrap--pink-gradient progress-wrap--label-top">
             <Progress value={87}><p className="progress__label">87%</p></Progress>

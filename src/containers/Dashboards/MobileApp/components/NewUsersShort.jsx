@@ -17,7 +17,7 @@ const NewUsersShort = ({ t }) => (
             <TrendingDownIcon className="dashboard__trend-icon" />
           </div>
           <div className="mobile-app-widget__title">
-            <h5>{t('dashboard_mobile_app.widget_new_users')}</h5>
+            <h5>{t('Demand status')}</h5>
           </div>
           <div className="progress-wrap progress-wrap--small progress-wrap--blue-gradient progress-wrap--label-top">
             <Progress value={79}><p className="progress__label">79%</p></Progress>
