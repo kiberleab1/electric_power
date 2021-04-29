@@ -25,7 +25,7 @@ class BookingDashboard extends PureComponent {
       <Container className="dashboard">
         <Row>
           <Col md={12}>
-            <h3 className="page-title">{t('dashboard_booking.page_title')}</h3>
+            <h3 className="page-title">{t('Electronics')}</h3>
           </Col>
         </Row>
         <Row>

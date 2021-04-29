@@ -12,19 +12,19 @@ import getTooltipStyles from '../../../../shared/helpers';
 
 const data = [
   {
-    name: 'News', uv: 4000, pv: 2400, amt: 2400,
+    name: 'Steel', uv: 4000, pv: 2400, amt: 2400,
   },
   {
-    name: 'Video', uv: 3000, pv: 1398, amt: 2210,
+    name: 'Cement', uv: 3000, pv: 1398, amt: 2210,
   },
   {
-    name: 'Messages', uv: 2000, pv: 9800, amt: 2290,
+    name: 'Wood lumber', uv: 2000, pv: 9800, amt: 2290,
   },
   {
-    name: 'Photos', uv: 2780, pv: 3908, amt: 2000,
+    name: 'Primary aluminum', uv: 2780, pv: 3908, amt: 2000,
   },
   {
-    name: 'Weather', uv: 1890, pv: 4800, amt: 2181,
+    name: 'Gypsum', uv: 1890, pv: 4800, amt: 2181,
   },
 ];
 
@@ -33,8 +33,8 @@ const AppTileClicks = ({ t, dir, themeName }) => (
     lg={6}
     xl={6}
     md={12}
-    title={t('dashboard_mobile_app.app_tile_clicks')}
-    subhead="How effective your business is in comparison with the previous month"
+    title={t('Material sale Progress')}
+    subhead="Specific Construction material sale compared to previous month"
     panelClass="panel--narrow"
   >
     <div dir="ltr">

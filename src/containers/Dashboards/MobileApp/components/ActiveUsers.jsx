@@ -37,8 +37,8 @@ const ActiveUsers = ({ t, dir, themeName }) => (
     lg={6}
     xl={9}
     md={12}
-    title={t('dashboard_mobile_app.active_users')}
-    subhead="See how users involve into app"
+    title={t('Construction Matrial Market Status')}
+    subhead="current mareket Status"
   >
     <div dir="ltr">
       <ResponsiveContainer height={195} className="dashboard__active-users-chart">

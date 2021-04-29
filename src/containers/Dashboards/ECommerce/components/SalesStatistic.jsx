@@ -14,7 +14,7 @@ const SalesStatistic = ({ t }) => (
   <Panel
     md={12}
     lg={6}
-    xl={3}
+    xl={4}
     xs={12}
     title={t('dashboard_commerce.sales_statistic')}
     subhead="Top selling items statistic by last month"
@@ -29,7 +29,7 @@ const SalesStatistic = ({ t }) => (
       <div className="dashboard__stat-info">
         <p>Top selling items statistic by last month</p>
         <h4 className="dashboard__stat-number">
-              $23,747.00
+              23,747.00 Birr
         </h4>
       </div>
     </div>
@@ -43,7 +43,7 @@ const SalesStatistic = ({ t }) => (
       <div className="dashboard__stat-info">
         <p>Top selling items statistic by last month</p>
         <h4 className="dashboard__stat-number">
-              $23,747.00
+              23,747.00 Birr
         </h4>
       </div>
     </div>

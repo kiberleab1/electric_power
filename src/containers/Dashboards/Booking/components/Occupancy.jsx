@@ -11,46 +11,46 @@ import OccupancyTooltipContent from './OccupancyTooltipContent';
 
 const data = [
   {
-    name: 'Mon 10/07',
-    uv: 95,
-    departure: 75,
-    arrival: 10,
+    name: 'Televsion',
+    Available: 125,
+    Sold: 75,
+    Stock: 100,
   },
   {
-    name: 'Tue 11/07',
-    uv: 85,
-    departure: 23,
-    arrival: 65,
+    name: 'Smartphone',
+    Available: 115,
+    Sold: 23,
+    Stock: 108,
   },
   {
-    name: 'Wed 12/07',
-    uv: 47,
-    departure: 26,
-    arrival: 45,
+    name: 'Oven',
+    Available: 147,
+    Sold: 26,
+    Stock: 73,
   },
   {
-    name: 'Thu 13/07',
-    uv: 80,
-    departure: 25,
-    arrival: 45,
+    name: 'Refrigretor',
+    Available: 130,
+    Sold: 25,
+    Stock: 105,
   },
   {
-    name: 'Fri 14/07',
-    uv: 55,
-    departure: 35,
-    arrival: 15,
+    name: 'Washing Machine',
+    Available: 155,
+    Sold: 35,
+    Stock: 90,
   },
   {
-    name: 'Sat 15/07',
-    uv: 99,
-    departure: 30,
-    arrival: 40,
+    name: 'Computer',
+    Available: 129,
+    Sold: 30,
+    Stock: 129,
   },
   {
-    name: 'Sun 16/07',
-    uv: 85,
-    departure: 48,
-    arrival: 26,
+    name: 'Office Machine',
+    Available: 145,
+    Sold: 48,
+    Stock: 133,
   },
 ];
 
@@ -68,10 +68,10 @@ class Occupancy extends PureComponent {
 
     return (
       <Panel
-        xl={6}
+        xl={5}
         lg={12}
         md={12}
-        title={t('dashboard_booking.occupancy')}
+        title={t('Electronics mareket overview')}
         subhead="See how effective your business is"
       >
         <div dir="ltr">
@@ -79,11 +79,11 @@ class Occupancy extends PureComponent {
             <ComposedChart data={data} margin={{ top: 20, left: -15 }}>
               <XAxis dataKey="name" tickLine={false} padding={{ left: 20 }} reversed={dir === 'rtl'} />
               <YAxis tickLine={false} tickFormatter={this.toPercent} orientation={dir === 'rtl' ? 'right' : 'left'} />
-              <Tooltip content={<OccupancyTooltipContent colorForKey={{ uv: '#555555' }} theme={themeName} />} />
+              <Tooltip content={<OccupancyTooltipContent colorForKey={{ Available: '#555555' }} theme={themeName} />} />
               <CartesianGrid vertical={false} />
-              <Bar dataKey="uv" name="Stay overs" fill="#f2f4f7" barSize={20} />
-              <Line type="linear" name="Departures" dataKey="departure" stroke="#b8e986" />
-              <Line type="linear" name="Arrivals" dataKey="arrival" stroke="#48b5ff" />
+              <Bar dataKey="Available" name="Stay overs" fill="#f2f4f7" barSize={20} />
+              <Line type="linear" name="Sold" dataKey="Sold" stroke="#b8e986" />
+              <Line type="linear" name="Stock" dataKey="Stock" stroke="#48b5ff" />
             </ComposedChart>
           </ResponsiveContainer>
         </div>
@@ -92,17 +92,17 @@ class Occupancy extends PureComponent {
           <Table responsive className="table dashboard__occupancy-table">
             <tbody>
               <tr>
-                <td className="td-head">Arrivals</td>
-                <td className="td-blue">24</td>
-                <td className="td-blue">74</td>
-                <td className="td-blue">54</td>
-                <td className="td-blue">57</td>
-                <td className="td-blue">32</td>
-                <td className="td-blue">68</td>
+                <td className="td-head">Stock</td>
+                <td className="td-blue">100</td>
+                <td className="td-blue">108</td>
+                <td className="td-blue">73</td>
+                <td className="td-blue">105</td>
+                <td className="td-blue">90</td>
+                <td className="td-blue">129</td>
                 <td className="td-blue">53</td>
               </tr>
               <tr>
-                <td className="td-head">Departures</td>
+                <td className="td-head">Sold</td>
                 <td className="td-green">75</td>
                 <td className="td-green">65</td>
                 <td className="td-green">46</td>

@@ -116,13 +116,13 @@ const NewOrders = ({ t, newOrder, onDeleteRow }) => (
               <div className="dashboard__table-orders-img-wrap">
                 <div className="dashboard__table-orders-img" style={{ backgroundImage: `url(${order.img})` }} />
               </div>
-              {order.title}
+              Bic Pen
             </td>
             <td>
-              <NewOrderAmount quantity={order.quantity} />
+              <NewOrderAmount quantity= "123" />
             </td>
-            <td>{order.sold}</td>
-            <td className="dashboard__table-orders-total" dir="ltr">{order.total}</td>
+            <td>34</td>
+            <td className="dashboard__table-orders-total" dir="ltr">2345 Birr</td>
             <td>
               <DropDownMore index={index} handleDeleteRow={e => onDeleteRow(index, e)} />
             </td>
@@ -130,7 +130,7 @@ const NewOrders = ({ t, newOrder, onDeleteRow }) => (
         ))}
       </tbody>
     </Table>
-    <Link to="/e-commerce/catalog" className="dashboard__table-orders-link">All products <ChevronDownIcon /></Link>
+    <Link to="#" className="dashboard__table-orders-link">All products <ChevronDownIcon /></Link>
   </Panel>
 );
 

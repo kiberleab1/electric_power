@@ -41,7 +41,7 @@ const WeeklyStat = ({ t }) => (
   <Panel
     md={12}
     lg={6}
-    xl={3}
+    xl={4}
     xs={12}
     title={t('dashboard_booking.weekly_stat')}
     subhead="Top selling items statistic by last month"
@@ -90,19 +90,19 @@ const WeeklyStat = ({ t }) => (
         </div>
       </div>
       <hr />
-      <PanelTitle title={t('dashboard_booking.social_score')} />
+      <PanelTitle title={t('Social Media marketing score')} />
       <div className="dashboard__social-stat">
         <SocialScore progress={87}>
-          Booking.com
+          Facebook
         </SocialScore>
         <SocialScore progress={65}>
-          Airbnb
+          Telegram
         </SocialScore>
         <SocialScore progress={92}>
-          Tripadvisor
+          Twitter
         </SocialScore>
         <SocialScore progress={81}>
-          Tripadvisor
+          Instagram
         </SocialScore>
       </div>
     </div>
