@@ -19,12 +19,12 @@ import Emails from './components/Emails';
 import SalesReport from './components/SalesReport';
 import ShortReminders from './components/ShortReminders';
 import { deleteNewOrderTableData } from '../../../redux/actions/newOrderTableActions';
-import { NewOrderTableProps } from '../../../shared/prop-types/TablesProps';
+import { NewNewOrderTableProps } from '../../../shared/prop-types/TablesProps';
 import { RTLProps } from '../../../shared/prop-types/ReducerProps';
 
 class ECommerceDashboard extends PureComponent {
   static propTypes = {
-    newOrder: NewOrderTableProps.isRequired,
+    newOrder: NewNewOrderTableProps.isRequired,
     dispatch: PropTypes.func.isRequired,
     t: PropTypes.func.isRequired,
     rtl: RTLProps.isRequired,
@@ -72,6 +72,6 @@ class ECommerceDashboard extends PureComponent {
 }
 
 export default connect(state => ({
-  newOrder: state.newOrder.items,
+  newOrder: state.newNewOrder.items,
   rtl: state.rtl,
 }))(withTranslation('common')(ECommerceDashboard));

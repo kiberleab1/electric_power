@@ -66,12 +66,12 @@ class SidebarContent extends Component {
           </ul>
 
 
-          <SidebarCategory title="Layout" icon="layers">
+          <SidebarCategory title="Dark Mode" icon="layers">
             <button className="sidebar__link" type="button" onClick={changeToLight}>
-              <p className="sidebar__link-title">Light Theme</p>
+              <p className="sidebar__link-title">Light Mode</p>
             </button>
             <button className="sidebar__link" type="button" onClick={changeToDark}>
-              <p className="sidebar__link-title">Dark Theme</p>
+              <p className="sidebar__link-title">Dark Mode</p>
             </button>
           </SidebarCategory>
           {/*<SidebarLink

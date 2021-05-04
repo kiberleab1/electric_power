@@ -18,7 +18,7 @@ const MobileAppDashboard = ({ t, rtl }) => (
   <Container className="dashboard">
     <Row>
       <Col md={12}>
-        <h3 className="page-title">{t('Constraction Materials')}</h3>
+        <h3 className="page-title">{t('Construction Materials')}</h3>
       </Col>
     </Row>
     <Row>

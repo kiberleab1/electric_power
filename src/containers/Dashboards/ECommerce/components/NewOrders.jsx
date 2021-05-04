@@ -9,7 +9,7 @@ import ChevronDownIcon from 'mdi-react/ChevronDownIcon';
 import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 import classNames from 'classnames';
-import { NewOrderTableProps } from '../../../../shared/prop-types/TablesProps';
+import { NewNewOrderTableProps } from '../../../../shared/prop-types/TablesProps';
 
 import Panel from '../../../../shared/components/Panel';
 
@@ -26,6 +26,7 @@ const DropDownMore = ({ index, handleDeleteRow }) => (
 );
 
 DropDownMore.propTypes = {
+
   index: PropTypes.number.isRequired,
   handleDeleteRow: PropTypes.func.isRequired,
 };
@@ -116,13 +117,15 @@ const NewOrders = ({ t, newOrder, onDeleteRow }) => (
               <div className="dashboard__table-orders-img-wrap">
                 <div className="dashboard__table-orders-img" style={{ backgroundImage: `url(${order.img})` }} />
               </div>
-              Bic Pen
+            {
+              order.title
+            }
             </td>
             <td>
-              <NewOrderAmount quantity= "123" />
+              <NewOrderAmount quantity={order.quantity} />
             </td>
-            <td>34</td>
-            <td className="dashboard__table-orders-total" dir="ltr">2345 Birr</td>
+            <td>{order.sold}</td>
+            <td className="dashboard__table-orders-total" dir="ltr">{order.total}</td>
             <td>
               <DropDownMore index={index} handleDeleteRow={e => onDeleteRow(index, e)} />
             </td>
@@ -130,12 +133,12 @@ const NewOrders = ({ t, newOrder, onDeleteRow }) => (
         ))}
       </tbody>
     </Table>
-    <Link to="#" className="dashboard__table-orders-link">All products <ChevronDownIcon /></Link>
+  
   </Panel>
 );
 
 NewOrders.propTypes = {
-  newOrder: NewOrderTableProps.isRequired,
+  newOrder: NewNewOrderTableProps.isRequired,
   onDeleteRow: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
 };

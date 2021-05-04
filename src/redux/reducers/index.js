@@ -9,6 +9,7 @@ import authReducer from './authReducer';
 import newCommoditiesTableReducer from './newCommoditiesTableReducer';
 import newOilTableReducer from './newOilTableReducer';
 import newGasTableReducer from './newGasTableReducer';
+import newNewOrderTableReducer from './newNewOrderTableReducer';
 export {
   themeReducer,
   rtlReducer,
@@ -21,4 +22,5 @@ export {
   authReducer,
   newOilTableReducer,
   newGasTableReducer,
+  newNewOrderTableReducer,
 };

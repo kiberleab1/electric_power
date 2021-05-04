@@ -11,6 +11,7 @@ import {
   rtlReducer,
   authReducer,
   newOilTableReducer,
+  newNewOrderTableReducer,
 } from '../../redux/reducers/index';
 
 const reducer = combineReducers({
@@ -20,6 +21,7 @@ const reducer = combineReducers({
   sidebar: sidebarReducer,
   cryptoTable: cryptoTableReducer,
   newOrder: newOrderTableReducer,
+  newNewOrder: newNewOrderTableReducer,
   newCommodities: newCommoditiesTableReducer,
   newOil: newOilTableReducer,
   customizer: customizerReducer,

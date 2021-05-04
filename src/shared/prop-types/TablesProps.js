@@ -26,6 +26,17 @@ export const NewOrderRowProps = shape({
 
 export const NewOrderTableProps = arrayOf(NewOrderRowProps);
 
+export const NewNewOrderRowProps = shape({
+  title: string,
+  quantity: number,
+  sold: number,
+  total: string,
+  img: string,
+});
+
+export const NewNewOrderTableProps = arrayOf(NewNewOrderRowProps);
+
+
 export const NewCommoditiesRowProps = shape({
   title: string,
   quantity: number,

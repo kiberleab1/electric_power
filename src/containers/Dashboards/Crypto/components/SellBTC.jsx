@@ -15,7 +15,7 @@ const SellBTC = ({ handleSubmit }) => (
             name="amount"
             component="input"
             type="text"
-            placeholder="0,000334 BIRR"
+            placeholder="2,455 732 BIRR"
           />
         </div>
       </div>
