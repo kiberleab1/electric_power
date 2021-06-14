@@ -8,7 +8,7 @@ import TopbarNotification from './TopbarNotification';
 import TopbarSearch from './TopbarSearch';
 import TopbarLanguage from './TopbarLanguage';
 import { UserProps } from '../../../shared/prop-types/ReducerProps';
-
+import mainLogo from '../../../shared/img/logo/headernew2013.jpg'
 class Topbar extends PureComponent {
   static propTypes = {
     changeMobileSidebarVisibility: PropTypes.func.isRequired,
@@ -20,7 +20,7 @@ class Topbar extends PureComponent {
     const { changeMobileSidebarVisibility, changeSidebarVisibility, user } = this.props;
 
     return (
-      <div className="topbar">
+      <div className="topbar" style={{backgroundColor:"#fea348"}}>
         <div className="topbar__wrapper">
           <div className="topbar__left">
             <TopbarSidebarButton
@@ -28,6 +28,9 @@ class Topbar extends PureComponent {
               changeSidebarVisibility={changeSidebarVisibility}
             />
             <Link className="topbar__logo" to="/dashboard_default" />
+          </div>
+          <div>
+            <img src={mainLogo} style={{marginLeft:"250px", height:"90%", width:"50%", marginTop:"2px"}}/>
           </div>
           <div className="topbar__right">
             <TopbarSearch />

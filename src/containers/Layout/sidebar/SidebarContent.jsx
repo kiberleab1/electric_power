@@ -21,46 +21,33 @@ class SidebarContent extends Component {
     return (
       <div className="sidebar__content">
         <ul className="sidebar__block">
-        <SidebarLink title="Gold and Commodities" 
+        <SidebarLink title="Summary" 
             icon="home" 
             route="/dashboard_default" 
             onClick={this.hideSidebar}
            />
           <SidebarLink
-            title="E-commerce"
+            title="Billing History"
             icon="store"
             route="/dashboard_e_commerce"
             onClick={this.hideSidebar}
           />
           <SidebarLink
-            title="Food and OilSeeds"
+            title="Complain form"
             icon="heart-pulse"
             route="/dashboard_fitness"
             onClick={this.hideSidebar}
           />
           <SidebarLink
-            title="Currency Exchange"
+            title="FAQ"
             icon="rocket"
             route="/dashboard_crypto"
             onClick={this.hideSidebar}
           />
           <SidebarLink
-            title="Construction Materials"
+            title="About US"
             icon="diamond"
-            route="/dashboard_mobile_app"
-            onClick={this.hideSidebar}
-          />
-          <SidebarLink
-           title="Electronics"
-           icon="smartphone"
-           route="/dashboard_booking"
-           onClick={this.hideSidebar}
-         />
-         
-         <SidebarLink
-            title="Oil and Gas"
-            icon="rocket"
-            route="/dashboard_oil_gas"
+            route="/documentation/introduction"
             onClick={this.hideSidebar}
           />
           </ul>

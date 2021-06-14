@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { connect } from 'react-redux';
 import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
@@ -6,9 +6,13 @@ import {
 import { withTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import Panel from '../../../../shared/components/Panel';
-
+import axios from 'axios';
 import getTooltipStyles from '../../../../shared/helpers';
 
+//const [count,setCount] = useState(0);
+const componentDidMont = () => {
+  console.log("hello World");
+}
 const data = [{
   name: 'Mon', plan: 590, pv: 800, current: 1400,
 },
@@ -32,7 +36,7 @@ const data = [{
 }];
 
 const ProductSales = ({ t, rtl, themeName }) => (
-  <Panel lg={12} title={t('dashboard_commerce.product_sales')}>
+  <Panel lg={12} title={t('energy Consumption(in KWH)')}>
     <div dir="ltr">
       <ResponsiveContainer height={250} className="dashboard__area">
         <AreaChart data={data} margin={{ top: 20, left: -15, bottom: 20 }}>
@@ -42,14 +46,14 @@ const ProductSales = ({ t, rtl, themeName }) => (
           <Legend />
           <CartesianGrid />
           <Area
-            name="Current Sales"
+            name="Average Consumption"
             type="monotone"
             dataKey="current"
             fill="#4ce1b6"
             stroke="#4ce1b6"
             fillOpacity={0.2}
           />
-          <Area name="Plan Sales" type="monotone" dataKey="plan" fill="#70bbfd" stroke="#70bbfd" fillOpacity={0.2} />
+          <Area name="Current Consumption" type="monotone" dataKey="plan" fill="#70bbfd" stroke="#70bbfd" fillOpacity={0.2} />
         </AreaChart>
       </ResponsiveContainer>
     </div>

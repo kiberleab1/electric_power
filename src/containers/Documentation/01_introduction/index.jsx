@@ -9,7 +9,7 @@ const Introduction = () => (
   <Container className="documentation">
     <Row>
       <Col md={12}>
-        <h3 className="page-title">Documentation / Introduction</h3>
+        <h3 className="page-title">About US</h3>
       </Col>
     </Row>
     <StickyContainer>
@@ -27,7 +27,7 @@ const Introduction = () => (
         </Col>
       </Row>
     </StickyContainer>
-    <NavigationBottom nextLink="/documentation/installation" nextTitle="Installation" />
+ 
   </Container>
 );
 
